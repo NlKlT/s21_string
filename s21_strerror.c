@@ -1,3 +1,5 @@
+#include "s21_strerror.h"
+
 char *s21_strerror(int errnum) {
 #ifdef __linux
   static char *errors[134] = {
