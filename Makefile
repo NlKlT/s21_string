@@ -1,8 +1,8 @@
 CC= gcc
 LFLAGS= -pthread -lcheck_pic -pthread -lrt -lm -lsubunit
 CFLAGS = -Wall -Werror -Wextra -std=c11 -g
-TEST= ./tests/test_s21_*.c
-all: s21_string.a gcov_report test clean
+TEST= ./unit_tests/test_s21_*.c
+all: s21_string.a gcov_report test
 s21_string.a:
 	$(CC) $(CFLAGS) -c s21_*.c
 	ar rcs ./s21_string.a *.o

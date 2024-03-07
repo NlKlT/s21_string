@@ -1,4 +1,4 @@
-#include "s21_tests.h"
+#include "test.h"
 
 START_TEST(s21_memset_test1) {
     char str[] = "abcde";

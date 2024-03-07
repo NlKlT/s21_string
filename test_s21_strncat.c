@@ -1,4 +1,4 @@
-#include "s21_tests.h"
+#include "test.h"
 
 START_TEST(s21_strncat_test1) {
     char s21_str1[] = "abcde";
