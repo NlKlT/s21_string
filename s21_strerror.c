@@ -1,4 +1,4 @@
-#include "s21_strerror.h"
+#include "s21_string.h"
 
 char *s21_strerror(int errnum) {
 #ifdef __linux
