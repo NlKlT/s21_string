@@ -1,3 +1,5 @@
+#include "s21_string.h"
+
 char *s21_strchr(const char *str, int c) {
   s21_size_t len = strlen(str);
   char *ans = NULL;
