@@ -17,7 +17,7 @@ END_TEST
 START_TEST(s21_strchr_test3) {
     char str[] = "12345";
     char symbol = 'e';
-    ck_assert_str_eq(s21_strchr(str, symbol), strchr(str, symbol));
+    ck_assert_ptr_eq(s21_strchr(str, symbol), strchr(str, symbol));
 }
 END_TEST
 
@@ -43,7 +43,7 @@ START_TEST(s21_strchr_test6) {
 END_TEST
 
 Suite *make_strchr_suite(void) {
-    Suite *s = suite_create("s21_string+ checking");
+    Suite *s = suite_create("strchr");
     TCase *tc_strchr = tcase_create("strchr_test");
     suite_add_tcase(s, tc_strchr);
     tcase_add_test(tc_strchr, s21_strchr_test1);

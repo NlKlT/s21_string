@@ -11,7 +11,7 @@ END_TEST
 
 START_TEST(s21_memset_test2) {
     char str[] = "ABCDE";
-    char s21_str[] = "abcde";
+    char s21_str[] = "ABCDE";
     char symbol = 'W';
     int n = 2;
     ck_assert_str_eq(s21_memset(s21_str, symbol, n), memset(str, symbol, n));
@@ -65,7 +65,7 @@ END_TEST
 
 Suite *make_memset_suite(void) {
   Suite *suite;
-  suite = suite_create("s21_string+ checking");
+  suite = suite_create("memset");
   TCase *tc_memset = tcase_create("memset_test");
   suite_add_tcase(suite, tc_memset);
   tcase_add_test(tc_memset, s21_memset_test1);
