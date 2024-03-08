@@ -5,10 +5,10 @@ void runtest(Suite *make_suite, int *result);
 int main(void) {
   int result = 0;
   
-  runtest(suite_s21_memset(), &result);
-  runtest(suite_s21_strchr(), &result);
-  runtest(suite_s21_strncat(), &result);
-  runtest(suite_s21_strncmp(), &result);
+  runtest(make_memset_suite(), &result);
+  runtest(make_strchr_suite(), &result);
+  runtest(make_strncat_suite(), &result);
+  runtest(make_strncmp_suite(), &result);
   runtest(make_memchr_suite(), &result);
   runtest(make_memcmp_suite(), &result);
   runtest(make_memcpy_suite(), &result);

@@ -9,10 +9,10 @@
 
 #include "../s21_string.h"
 
-Suite *suite_s21_memset(void);
-Suite *suite_s21_strchr(void);
-Suite *suite_s21_strncat(void);
-Suite *suite_s21_strncmp(void);
+Suite *make_memset_suite(void);
+Suite *make_strchr_suite(void);
+Suite *make_strncat_suite(void);
+Suite *make_strncmp_suite(void);
 Suite *make_memchr_suite(void);
 Suite *make_memcmp_suite(void);
 Suite *make_memcpy_suite(void);
