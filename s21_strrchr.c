@@ -3,10 +3,11 @@
 #include "s21_string.h"
 
 char *s21_strrchr(const char *str, int c) {
-  for (s21_size_t i = s21_strlen(str); i >= 0; i--) {  // s21_strlen, s21_size_t
+  char *res = s21_NULL;
+  for (s21_size_t i = 0; i < s21_strlen(str) + 1; i++) {
     if (str[i] == c) {
-      return ((char *)str) + i;
+      res = ((char *)str) + i;
     }
   }
-  return s21_NULL;  // s21_NULL
+  return res;
 }
