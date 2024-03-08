@@ -20,7 +20,7 @@ gcov_report: s21_string.a
 	open ./report/index.html
 
 clean:
-	rm -rf *.a *.gch *.o *.gcno
+	rm -rf *.a *.gch *.o *.gcno *.gcda
 
 reduild:
 	make clean
