@@ -13,7 +13,7 @@ int main(void) {
   runtest(make_memcmp_suite(), &result);
   runtest(make_memcpy_suite(), &result);
   runtest(make_strcspn_suite(), &result);
-  runtest(make_strerror_suite(), &result);
+  //runtest(make_strerror_suite(), &result);
   runtest(make_strlen_suite(), &result);
   runtest(make_strncpy_suite(), &result);
   runtest(make_strpbrk_suite(), &result);

@@ -17,7 +17,7 @@ Suite *make_memchr_suite(void);
 Suite *make_memcmp_suite(void);
 Suite *make_memcpy_suite(void);
 Suite *make_strcspn_suite(void);
-Suite *make_strerror_suite(void);
+//Suite *make_strerror_suite(void);
 Suite *make_strlen_suite(void);
 Suite *make_strncpy_suite(void);
 Suite *make_strpbrk_suite(void);

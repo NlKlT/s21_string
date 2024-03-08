@@ -43,14 +43,14 @@ START_TEST(s21_strchr_test6) {
 END_TEST
 
 Suite *make_strchr_suite(void) {
-    Suite *suite;
-    suite = suite_create("s21_string+ checking");
+    Suite *s = suite_create("s21_string+ checking");
     TCase *tc_strchr = tcase_create("strchr_test");
-    suite_add_tcase(suite, tc_strchr);
+    suite_add_tcase(s, tc_strchr);
     tcase_add_test(tc_strchr, s21_strchr_test1);
     tcase_add_test(tc_strchr, s21_strchr_test2);
     tcase_add_test(tc_strchr, s21_strchr_test3);
     tcase_add_test(tc_strchr, s21_strchr_test4);
     tcase_add_test(tc_strchr, s21_strchr_test5);
     tcase_add_test(tc_strchr, s21_strchr_test6);
+    return s;
 }
