@@ -1,7 +1,7 @@
 CC= gcc
 LFLAGS= -pthread -lcheck_pic -pthread -lrt -lm -lsubunit
 CFLAGS = -Wall -Werror -Wextra -std=c11 -g
-TEST= ./unit_tests/test_s21_*.c
+TEST= ./unit_tests/test_*.c
 all: s21_string.a gcov_report test
 s21_string.a:
 	$(CC) $(CFLAGS) -c s21_*.c
@@ -20,7 +20,7 @@ gcov_report: s21_string.a
 	open ./report/index.html
 
 clean:
-	rm -rf *.o
+	rm -rf *.a *.gch *.o *.gcno
 
 reduild:
 	make clean
