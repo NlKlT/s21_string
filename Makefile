@@ -25,3 +25,9 @@ clean:
 reduild:
 	make clean
 	make all
+
+clang_n:
+	clang-format -style=Google -n *.[ch]
+
+clang_i:
+	clang-format -style=Google -i *.[ch]
