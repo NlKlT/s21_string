@@ -16,7 +16,7 @@ END_TEST
 START_TEST(strerror_4) { ck_assert_pstr_eq(s21_strerror(130), strerror(130)); }
 END_TEST
 
-Suite *suite_s21_strerror(void) {
+Suite *make_s21_strerror(void) {
   Suite *suite;
   suite = suite_create("Functions checking");
 

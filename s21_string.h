@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 #define s21_NULL ((void *)0)
 typedef unsigned long s21_size_t;

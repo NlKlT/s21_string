@@ -21,8 +21,8 @@ int main(void) {
   printf("\n");
   runtest(make_strcspn_suite(), &result);
   printf("\n");
-  // runtest(make_strerror_suite(), &result);
-  // printf("\n");
+  runtest(make_strerror_suite(), &result);
+  printf("\n");
   runtest(make_strlen_suite(), &result);
   printf("\n");
   runtest(make_strncpy_suite(), &result);
