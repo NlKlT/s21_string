@@ -45,7 +45,8 @@ END_TEST
 START_TEST(test_s21_strstr_7) {
   char str1[] = "word";
   char str2[] = "words";
-  ck_assert_str_eq(s21_strstr(str1, str2), strstr(str1, str2));
+  ck_assert_ptr_null(s21_strstr(str1, str2));
+  ck_assert_ptr_null(strstr(str1, str2));
 }
 END_TEST
 

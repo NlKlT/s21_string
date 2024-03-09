@@ -3,7 +3,8 @@
 START_TEST(test_s21_strpbrk_1) {
   char str1[] = "";
   char str2[] = "";
-  ck_assert_str_eq(s21_strpbrk(str1, str2), strpbrk(str1, str2));
+  ck_assert_ptr_null(s21_strpbrk(str1, str2));
+  ck_assert_ptr_null(strpbrk(str1, str2));
 }
 END_TEST
 
@@ -24,21 +25,24 @@ END_TEST
 START_TEST(test_s21_strpbrk_4) {
   char str1[] = "\0";
   char str2[] = "";
-  ck_assert_str_eq(s21_strpbrk(str1, str2), strpbrk(str1, str2));
+  ck_assert_ptr_null(s21_strpbrk(str1, str2));
+  ck_assert_ptr_null(strpbrk(str1, str2));
 }
 END_TEST
 
 START_TEST(test_s21_strpbrk_5) {
   char str1[] = "\0";
   char str2[] = "";
-  ck_assert_str_eq(s21_strpbrk(str1, str2), strpbrk(str1, str2));
+  ck_assert_ptr_null(s21_strpbrk(str1, str2));
+  ck_assert_ptr_null(strpbrk(str1, str2));
 }
 END_TEST
 
 START_TEST(test_s21_strpbrk_6) {
   char str1[] = "";
   char str2[] = "123";
-  ck_assert_str_eq(s21_strpbrk(str1, str2), strpbrk(str1, str2));
+  ck_assert_ptr_null(s21_strpbrk(str1, str2));
+  ck_assert_ptr_null(strpbrk(str1, str2));
 }
 END_TEST
 
