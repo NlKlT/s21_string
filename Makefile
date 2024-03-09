@@ -21,7 +21,7 @@ gcov_report: s21_string.a
 	
 
 clean:
-	rm -rf *.a *.gch *.o *.gcno *.gcda gcov_test test_report.info
+	rm -rf *.a *.gch *.o *.gcno *.gcda gcov_test test_report.info report
 
 reduild:
 	make clean
