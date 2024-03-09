@@ -251,8 +251,8 @@ static char *s21_error_list[ERROR_LIST_SIZE] = {
 
 char *s21_strerror(int errnum) {
   static char *res;
-  static char arr[128] = "Unknown error: ";
-  int pointer = 15;
+  static char arr[128] = "Unknown error ";
+  int pointer = 14;
   int errnum_copy;
   int counter = 0;
   if (errnum < 0 || errnum >= ERROR_LIST_SIZE) {
