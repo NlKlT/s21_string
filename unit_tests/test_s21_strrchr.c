@@ -53,12 +53,12 @@ Suite *make_strrchr_suite(void) {
   Suite *s = suite_create("strrchr");
   TCase *tc_strings = tcase_create("strings");
   suite_add_tcase(s, tc_strings);
-  //tcase_add_test(tc_strings, test_s21_strrchr_1);
+  // tcase_add_test(tc_strings, test_s21_strrchr_1);
   tcase_add_test(tc_strings, test_s21_strrchr_2);
   tcase_add_test(tc_strings, test_s21_strrchr_3);
   tcase_add_test(tc_strings, test_s21_strrchr_4);
   tcase_add_test(tc_strings, test_s21_strrchr_5);
-  //tcase_add_test(tc_strings, test_s21_strrchr_6);
+  // tcase_add_test(tc_strings, test_s21_strrchr_6);
   tcase_add_test(tc_strings, test_s21_strrchr_7);
   return s;
 }

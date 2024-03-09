@@ -18,9 +18,10 @@ gcov_report: s21_string.a
 	genhtml -o report test_report.info
 	rm -rf *.a *.gch *.o *.gcno gcov_test
 	open ./report/index.html
+	
 
 clean:
-	rm -rf *.a *.gch *.o *.gcno *.gcda
+	rm -rf *.a *.gch *.o *.gcno *.gcda gcov_test test_report.info
 
 reduild:
 	make clean
