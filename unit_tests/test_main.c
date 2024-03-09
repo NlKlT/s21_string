@@ -35,11 +35,13 @@ int main(void) {
   printf("\n");
   runtest(make_strtok_suite(), &result);
   printf("\n");
+  runtest(make_sprintf_suite(), &result);
+  printf("\n");
 
   return 0;  //(result == 0) ? EXIT_SUCCESS : EXIT_FAILURE; // заменил на return
              // 0, поскольку эта штука вызыдает ошибку, если завален хотя бы
              // один тест, и дальше Makefile не выполняет команды. Без этого все
-             //работает.
+             // работает.
 }
 
 void runtest(Suite *make_suite, int *result) {
