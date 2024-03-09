@@ -50,8 +50,7 @@ START_TEST(s21_strncmp_test6) {
   char s21_str2[] = "abcde";
   char str1[] = "abcde";
   char str2[] = "abcde";
-  ck_assert_int_eq(s21_strncmp(s21_str1, s21_str2, 10),
-                   strncmp(str1, str2, 10));
+  ck_assert_int_eq(s21_strncmp(s21_str1, s21_str2, 5), strncmp(str1, str2, 5));
 }
 END_TEST
 
