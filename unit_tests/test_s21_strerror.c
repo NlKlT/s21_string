@@ -23,7 +23,7 @@ START_TEST(test_s21_strerror_4) {
 END_TEST
 
 Suite *make_strerror_suite(void) {
-  Suite *s = suite_create("Functions checking");
+  Suite *s = suite_create("strerror");
   TCase *tc_strerror = tcase_create("strerror_test");
 
   suite_add_tcase(s, tc_strerror);
