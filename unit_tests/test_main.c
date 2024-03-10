@@ -37,6 +37,14 @@ int main(void) {
   printf("\n");
   runtest(make_sprintf_suite(), &result);
   printf("\n");
+  runtest(make_upper_suite(), &result);
+  printf("\n");
+  runtest(make_lower_suite(), &result);
+  printf("\n");
+  runtest(make_insert_suite(), &result);
+  printf("\n");
+  runtest(make_trim_suite(), &result);
+  printf("\n");
 
   return 0;  //(result == 0) ? EXIT_SUCCESS : EXIT_FAILURE; // заменил на return
              // 0, поскольку эта штука вызыдает ошибку, если завален хотя бы

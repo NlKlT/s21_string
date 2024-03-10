@@ -26,5 +26,9 @@ Suite *make_strrchr_suite(void);
 Suite *make_strstr_suite(void);
 Suite *make_strtok_suite(void);
 Suite *make_sprintf_suite(void);
+Suite *make_upper_suite(void);
+Suite *make_lower_suite(void);
+Suite *make_insert_suite(void);
+Suite *make_trim_suite(void);
 
 #endif  // SRC_TEST_TESTS_H

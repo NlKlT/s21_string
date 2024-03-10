@@ -133,4 +133,11 @@ void sprintf_mantissa(format_part *parameters, char *mantice, int notation);
 int sprintf_make_expo(long double number);
 void sprintf_make_sign(double number, format_part *parameters);
 
+// CS Functions //
+
+void *s21_to_upper(const char *str);
+void *s21_to_lower(const char *str);
+void *s21_insert(const char *src, const char *str, s21_size_t start_index);
+void *s21_trim(const char *src, const char *trim_chars);
+
 #endif  // SRC_S21_STRING_H_
