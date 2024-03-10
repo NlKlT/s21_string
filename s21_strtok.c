@@ -5,10 +5,7 @@ int check_delim(char ch, const char *delim);
 
 char *s21_strtok(char *str, const char *delim) {
   static char *p;
-  if (!str) {
-    str = p;
-  }
-  if (!str) {
+  if (!str && !(str = p)) {
     return s21_NULL;
   }
 

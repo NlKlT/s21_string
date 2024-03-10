@@ -56,6 +56,14 @@ START_TEST(test_s21_strtok_7) {
 }
 END_TEST
 
+START_TEST(test_s21_strtok_8) {
+  // char str1[] = "";
+  // char str2[] = "";
+  char str3[] = "";
+  ck_assert_pstr_eq(s21_strtok(s21_NULL, str3), strtok(s21_NULL, str3));
+}
+END_TEST
+
 Suite *make_strtok_suite(void) {
   Suite *s = suite_create("strtok");
   TCase *tc_strings = tcase_create("strings");
@@ -67,5 +75,6 @@ Suite *make_strtok_suite(void) {
   tcase_add_test(tc_strings, test_s21_strtok_5);
   tcase_add_test(tc_strings, test_s21_strtok_6);
   tcase_add_test(tc_strings, test_s21_strtok_7);
+  tcase_add_test(tc_strings, test_s21_strtok_8);
   return s;
 }

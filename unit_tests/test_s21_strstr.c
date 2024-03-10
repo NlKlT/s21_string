@@ -50,6 +50,14 @@ START_TEST(test_s21_strstr_7) {
 }
 END_TEST
 
+START_TEST(test_s21_strstr_8) {
+  char str1[] = "This is a test string";
+  char str2[] = "test strung";
+  ck_assert_ptr_null(s21_strstr(str1, str2));
+  ck_assert_ptr_null(strstr(str1, str2));
+}
+END_TEST
+
 Suite *make_strstr_suite(void) {
   Suite *s = suite_create("strstr");
   TCase *tc_strings = tcase_create("strings");
@@ -61,5 +69,6 @@ Suite *make_strstr_suite(void) {
   tcase_add_test(tc_strings, test_s21_strstr_5);
   tcase_add_test(tc_strings, test_s21_strstr_6);
   tcase_add_test(tc_strings, test_s21_strstr_7);
+  tcase_add_test(tc_strings, test_s21_strstr_8);
   return s;
 }
